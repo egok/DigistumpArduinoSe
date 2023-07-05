@@ -1,16 +1,16 @@
 #include "DigiKeyboard.h"
-#ifndef DIGIKEYBOARDDE_H
-#define DIGIKEYBOARDDE_H
+#ifndef DIGIKEYBOARDSE_H
+#define DIGIKEYBOARDSE_H
 
 
-#define DE_MOD_CONTROL_LEFT    (1<<8)
-#define DE_MOD_SHIFT_LEFT      (1<<9)
-#define DE_MOD_ALT_LEFT        (1<<10)
-#define DE_MOD_GUI_LEFT        (1<<11)
-#define DE_MOD_CONTROL_RIGHT   (1<<12)
-#define DE_MOD_SHIFT_RIGHT     (1<<13)
-#define DE_MOD_ALT_RIGHT       (1<<14)
-#define DE_MOD_GUI_RIGHT       (1<<15)
+#define SE_MOD_CONTROL_LEFT    (1<<8)
+#define SE_MOD_SHIFT_LEFT      (1<<9)
+#define SE_MOD_ALT_LEFT        (1<<10)
+#define SE_MOD_GUI_LEFT        (1<<11)
+#define SE_MOD_CONTROL_RIGHT   (1<<12)
+#define SE_MOD_SHIFT_RIGHT     (1<<13)
+#define SE_MOD_ALT_RIGHT       (1<<14)
+#define SE_MOD_GUI_RIGHT       (1<<15)
 const uint16_t _ascii_de_map[128] PROGMEM =
         {
                 0x00,             // NUL
@@ -47,21 +47,21 @@ const uint16_t _ascii_de_map[128] PROGMEM =
                 0x00,             // US
 
                 0x2c,      //  ' '
-                0x1e|DE_MOD_SHIFT_LEFT,    // !
-                0x1F|DE_MOD_SHIFT_LEFT,    // "
+                0x1e|SE_MOD_SHIFT_LEFT,    // !
+                0x1F|SE_MOD_SHIFT_LEFT,    // "
                 0x38,    // #
-                0x21|DE_MOD_SHIFT_LEFT,    // $
-                0x22|DE_MOD_SHIFT_LEFT,    // %
-                0x23|DE_MOD_SHIFT_LEFT,    // &
-                0x32|DE_MOD_SHIFT_LEFT,          // '
-                0x25|DE_MOD_SHIFT_LEFT,    // (
-                0x26|DE_MOD_SHIFT_LEFT,    // )
-                0x30|DE_MOD_SHIFT_LEFT,    // *
+                0x21|SE_MOD_SHIFT_LEFT,    // $
+                0x22|SE_MOD_SHIFT_LEFT,    // %
+                0x23|SE_MOD_SHIFT_LEFT,    // &
+                0x32|SE_MOD_SHIFT_LEFT,          // '
+                0x25|SE_MOD_SHIFT_LEFT,    // (
+                0x26|SE_MOD_SHIFT_LEFT,    // )
+                0x30|SE_MOD_SHIFT_LEFT,    // *
                 0x30,    // +
                 0x36,          // ,
                 0x38,          // -
                 0x37,          // .
-                0x24|DE_MOD_SHIFT_LEFT,          // /
+                0x24|SE_MOD_SHIFT_LEFT,          // /
                 0x27,          // 0
                 0x1e,          // 1
                 0x1f,          // 2
@@ -72,45 +72,45 @@ const uint16_t _ascii_de_map[128] PROGMEM =
                 0x24,          // 7
                 0x25,          // 8
                 0x26,          // 9
-                0x37|DE_MOD_SHIFT_LEFT,      // :
-                0x36|DE_MOD_SHIFT_LEFT,          // ;
+                0x37|SE_MOD_SHIFT_LEFT,      // :
+                0x36|SE_MOD_SHIFT_LEFT,          // ;
                 0x64,      // <
-                0x27|DE_MOD_SHIFT_LEFT,          // =
-                0x64|DE_MOD_SHIFT_LEFT,      // >
-                0x2D|DE_MOD_SHIFT_LEFT,      // ?
-                0x14|DE_MOD_ALT_RIGHT,      // @ 0x40 0x14
-                0x04|DE_MOD_SHIFT_LEFT,      // A
-                0x05|DE_MOD_SHIFT_LEFT,      // B
-                0x06|DE_MOD_SHIFT_LEFT,      // C
-                0x07|DE_MOD_SHIFT_LEFT,      // D
-                0x08|DE_MOD_SHIFT_LEFT,      // E
-                0x09|DE_MOD_SHIFT_LEFT,      // F
-                0x0a|DE_MOD_SHIFT_LEFT,      // G
-                0x0b|DE_MOD_SHIFT_LEFT,      // H
-                0x0c|DE_MOD_SHIFT_LEFT,      // I
-                0x0d|DE_MOD_SHIFT_LEFT,      // J
-                0x0e|DE_MOD_SHIFT_LEFT,      // K
-                0x0f|DE_MOD_SHIFT_LEFT,      // L
-                0x10|DE_MOD_SHIFT_LEFT,      // M
-                0x11|DE_MOD_SHIFT_LEFT,      // N
-                0x12|DE_MOD_SHIFT_LEFT,      // O
-                0x13|DE_MOD_SHIFT_LEFT,      // P
-                0x14|DE_MOD_SHIFT_LEFT,      // Q
-                0x15|DE_MOD_SHIFT_LEFT,      // R
-                0x16|DE_MOD_SHIFT_LEFT,      // S
-                0x17|DE_MOD_SHIFT_LEFT,      // T
-                0x18|DE_MOD_SHIFT_LEFT,      // U
-                0x19|DE_MOD_SHIFT_LEFT,      // V
-                0x1a|DE_MOD_SHIFT_LEFT,      // W
-                0x1b|DE_MOD_SHIFT_LEFT,      // X
-                0x1d|DE_MOD_SHIFT_LEFT,      // Y
-                0x1c|DE_MOD_SHIFT_LEFT,      // Z
-                0x25|DE_MOD_ALT_RIGHT,          // [
-                0x2d|DE_MOD_ALT_RIGHT,          // bslash
-                0x26|DE_MOD_ALT_RIGHT,          // ]
+                0x27|SE_MOD_SHIFT_LEFT,          // =
+                0x64|SE_MOD_SHIFT_LEFT,      // >
+                0x2D|SE_MOD_SHIFT_LEFT,      // ?
+                0x14|SE_MOD_ALT_RIGHT,      // @ 0x40 0x14
+                0x04|SE_MOD_SHIFT_LEFT,      // A
+                0x05|SE_MOD_SHIFT_LEFT,      // B
+                0x06|SE_MOD_SHIFT_LEFT,      // C
+                0x07|SE_MOD_SHIFT_LEFT,      // D
+                0x08|SE_MOD_SHIFT_LEFT,      // E
+                0x09|SE_MOD_SHIFT_LEFT,      // F
+                0x0a|SE_MOD_SHIFT_LEFT,      // G
+                0x0b|SE_MOD_SHIFT_LEFT,      // H
+                0x0c|SE_MOD_SHIFT_LEFT,      // I
+                0x0d|SE_MOD_SHIFT_LEFT,      // J
+                0x0e|SE_MOD_SHIFT_LEFT,      // K
+                0x0f|SE_MOD_SHIFT_LEFT,      // L
+                0x10|SE_MOD_SHIFT_LEFT,      // M
+                0x11|SE_MOD_SHIFT_LEFT,      // N
+                0x12|SE_MOD_SHIFT_LEFT,      // O
+                0x13|SE_MOD_SHIFT_LEFT,      // P
+                0x14|SE_MOD_SHIFT_LEFT,      // Q
+                0x15|SE_MOD_SHIFT_LEFT,      // R
+                0x16|SE_MOD_SHIFT_LEFT,      // S
+                0x17|SE_MOD_SHIFT_LEFT,      // T
+                0x18|SE_MOD_SHIFT_LEFT,      // U
+                0x19|SE_MOD_SHIFT_LEFT,      // V
+                0x1a|SE_MOD_SHIFT_LEFT,      // W
+                0x1b|SE_MOD_SHIFT_LEFT,      // X
+                0x1d|SE_MOD_SHIFT_LEFT,      // Y
+                0x1c|SE_MOD_SHIFT_LEFT,      // Z
+                0x25|SE_MOD_ALT_RIGHT,          // [
+                0x2d|SE_MOD_ALT_RIGHT,          // bslash
+                0x26|SE_MOD_ALT_RIGHT,          // ]
                 0x35,    // ^
-                0x38|DE_MOD_SHIFT_LEFT,    // _
-                0x2E|DE_MOD_SHIFT_LEFT,          // `
+                0x38|SE_MOD_SHIFT_LEFT,    // _
+                0x2E|SE_MOD_SHIFT_LEFT,          // `
                 0x04,          // a
                 0x05,          // b
                 0x06,          // c
@@ -137,14 +137,14 @@ const uint16_t _ascii_de_map[128] PROGMEM =
                 0x1b,          // x
                 0x1d,          // y
                 0x1c,          // z
-                0x24|DE_MOD_ALT_RIGHT,    // {
-                0x64|DE_MOD_ALT_RIGHT,    // |
-                0x27|DE_MOD_ALT_RIGHT,    // }
-                0x30|DE_MOD_ALT_RIGHT,    // ~
+                0x24|SE_MOD_ALT_RIGHT,    // {
+                0x64|SE_MOD_ALT_RIGHT,    // |
+                0x27|SE_MOD_ALT_RIGHT,    // }
+                0x30|SE_MOD_ALT_RIGHT,    // ~
                 0       // DEL
         };
 
-class DigiKeyboardDeviceDe : public DigiKeyboardDevice{
+class DigiKeyboardDeviceSe : public DigiKeyboardDevice{
     public:
     size_t write(uint8_t chr) {
         unsigned int temp = pgm_read_word_near(_ascii_de_map + chr);
@@ -165,5 +165,5 @@ class DigiKeyboardDeviceDe : public DigiKeyboardDevice{
         usbSetInterrupt(array, size);
     }
 };
-DigiKeyboardDeviceDe DigiKeyboardDe = DigiKeyboardDeviceDe();
+DigiKeyboardDeviceSe DigiKeyboardSe = DigiKeyboardDeviceSe();
 #endif //DIGIKEYBOARDDE_H

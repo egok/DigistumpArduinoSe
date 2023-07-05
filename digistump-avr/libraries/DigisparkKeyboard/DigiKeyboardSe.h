@@ -1,3 +1,22 @@
+/**
+ *  TODO:
+ *  - Not working keystrokes: 
+ * + -> opens offfice application
+ * ´ -> maybe a combination with above or renders to ''
+ * y -> registers as z (as expected in german, so switch keys)
+ * å -> not registered
+ * ö -> not sure what is happening (opens a new tab in notepad, during println test and starts printing the rest of keystrokes)
+ * ä -> same as above
+ * z -> registers as y (as expected in german, so switch keys)
+ * ¤ -> registers as ??
+ * # -> registers as ??
+ * @ -> registers as ¤
+ * £ -> registers as ??
+ * $ -> registers as ??
+ * € -> registers as ??
+ * ~ -> registers as ??
+ * */
+
 #include "DigiKeyboard.h"
 #ifndef DIGIKEYBOARDSE_H
 #define DIGIKEYBOARDSE_H
@@ -103,8 +122,8 @@ const uint16_t _ascii_de_map[128] PROGMEM =
                 0x19|SE_MOD_SHIFT_LEFT,      // V
                 0x1a|SE_MOD_SHIFT_LEFT,      // W
                 0x1b|SE_MOD_SHIFT_LEFT,      // X
-                0x1d|SE_MOD_SHIFT_LEFT,      // Y
-                0x1c|SE_MOD_SHIFT_LEFT,      // Z
+                0x1c|SE_MOD_SHIFT_LEFT,      // Y
+                0x1d|SE_MOD_SHIFT_LEFT,      // Z
                 0x25|SE_MOD_ALT_RIGHT,          // [
                 0x2d|SE_MOD_ALT_RIGHT,          // bslash
                 0x26|SE_MOD_ALT_RIGHT,          // ]
@@ -135,8 +154,8 @@ const uint16_t _ascii_de_map[128] PROGMEM =
                 0x19,          // v
                 0x1a,          // w
                 0x1b,          // x
-                0x1d,          // y
-                0x1c,          // z
+                0x1c,          // y
+                0x1d,          // z
                 0x24|SE_MOD_ALT_RIGHT,    // {
                 0x64|SE_MOD_ALT_RIGHT,    // |
                 0x27|SE_MOD_ALT_RIGHT,    // }
